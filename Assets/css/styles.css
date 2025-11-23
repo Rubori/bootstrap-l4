@@ -1,5 +1,65 @@
-.container {
-    max-width: 1200px; 
-    margin: 0 auto;
-    padding: 0 15px; 
+.bg-lightblue {
+    background-color: #ADD8E6;
 }
+
+.nav1 {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    gap: 20px;
+}
+
+.nav1 img {
+    height: 50px;
+}
+
+.nav-titulo {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+    .nav1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.15);
+    border-radius: inherit;
+    z-index: 0;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+.imagen-a-usar {
+    width: 400px;
+    height: 300px;
+    padding-bottom: 15px;
+    object-fit: cover; /*La imagen no es 4:3 por lo que tuve que recortarla para que no se deformara*/
+}
+
+.fila-limitada {
+    max-width: 60%;
+    margin: 20px auto;
+}
+
