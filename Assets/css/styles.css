@@ -2,20 +2,22 @@
     background-color: #ADD8E6;
 }
 
-.nav1 {
+.navbar {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 20px;
+    padding: 10px 0px;
     gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.nav1 img {
+.navbar img {
     height: 50px;
 }
 
 .nav-titulo {
-    flex: 1;
+    flex: 1 1 auto;
     text-align: center;
 }
 
@@ -23,13 +25,14 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    white-space: nowrap;
 }
 
 @media (max-width: 576px) {
-    .nav1 {
+    .navbar {
         flex-direction: column;
         text-align: center;
+        width: 100%;
+        padding-left: 0px;
     }
 
     .nav-links {
@@ -52,14 +55,11 @@
 }
 
 .imagen-a-usar {
+    display: block;
     width: 400px;
     height: 300px;
+    margin: 0 auto;
     padding-bottom: 15px;
     object-fit: cover; /*La imagen no es 4:3 por lo que tuve que recortarla para que no se deformara*/
-}
-
-.fila-limitada {
-    max-width: 60%;
-    margin: 20px auto;
 }
 
